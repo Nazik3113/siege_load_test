@@ -14,7 +14,7 @@ services:
   
   node-app:
     hostname: node-app
-    build: ./
+    build: ./node-app/
     networks:
       - hsa105
     restart: always
