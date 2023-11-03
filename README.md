@@ -20,9 +20,9 @@ Concurrency - 10
 
 ```json
 {
-    "availability":			      100.00,
-    "response_time":		        0.01,
-    "throughput":			        0.01
+    "availability": 100.00,
+    "response_time": 0.01,
+    "throughput": 0.01
 }
 ```
 
@@ -30,9 +30,9 @@ Concurrency - 25
 
 ```json
 {
-    "availability":			      100.00,
-    "response_time":		        0.03,
-    "throughput":			        0.01
+    "availability": 100.00,
+    "response_time": 0.03,
+    "throughput": 0.01
 }
 ```
 
@@ -40,9 +40,9 @@ Concurrency - 50
 
 ```json
 {
-    "availability":			      100.00,
-    "response_time":		        0.08,
-    "throughput":			        0.01
+    "availability": 100.00,
+    "response_time": 0.08,
+    "throughput": 0.01
 }
 ```
 
@@ -50,9 +50,9 @@ Concurrency - 100(we run out of ports).
 
 ```json
 {
-    "availability":			        58.08,
-    "response_time":		        0.11,
-    "throughput":			        0.01
+    "availability": 58.08,
+    "response_time": 0.11,
+    "throughput": 0.01
 }
 ```
 
