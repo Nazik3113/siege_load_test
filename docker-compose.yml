@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  mongo:
+    hostname: mongo
+    image: mongo:7.0.2
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=hsa105
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=hsa105
+    restart: always
+    networks:
+      - hsa105
+  
+  node-app:
+    hostname: node-app
+    build: ./
+    networks:
+      - hsa105
+    restart: always
+    ports:
+      - 8076:8076
+    depends_on:
+      - mongo
+
+  siege:
+    hostname: siege
+    build: ./siege/
+    networks:
+      - hsa105
+    restart: always
+    depends_on:
+      - mongo
+      - node-app
+
+networks:
+  hsa105: {}

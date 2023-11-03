@@ -1,0 +1,15 @@
+{
+  "name": "hsa105",
+  "version": "1.0.0",
+  "description": "Projector HSA10.5 Homework.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Nazarii Spikhalskyi <nazarii.spikhalskyi@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}
